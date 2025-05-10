@@ -1,0 +1,41 @@
+/* Keyframe for fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.5s ease;
+  background-color: white; /* Default background */
+}
+
+/* Style for all buttons */
+button {
+  padding: 10px 20px;
+  background-color: #ffb347;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  opacity: 1; /* ✅ Make buttons visible by default */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #ff9900;
+}
+
+/* Animation class that can be toggled */
+button.fadeIn {
+  animation: fadeIn 1s forwards;
+}
